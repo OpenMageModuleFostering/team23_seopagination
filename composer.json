@@ -1,0 +1,16 @@
+{
+    "name": "OpenMageModuleFostering/Team23_SeoPagination",
+    "type": "magento-module",
+    "license": "The-MIT-License-(MIT)",
+    "homepage": "",
+    "description": "SEO optimized pagination.",
+    "authors": [
+    {
+        "name": "Marc Rochow",
+        "email": "magento@team23.de"
+    }
+],
+    "suggest": {
+        "magento-hackathon/magento-composer-installer": "*"
+    }
+}

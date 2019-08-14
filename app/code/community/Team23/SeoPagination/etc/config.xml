@@ -1,0 +1,71 @@
+<?xml version="1.0"?>
+
+<!--
+/**
+ * Team23 SeoPagination
+ *
+ * @category  Team23
+ * @package   Team23_SeoPagination
+ * @version   1.0.0
+ * @copyright 2016 Team23 GmbH & Co. KG (http://www.team23.de)
+ * @license   http://opensource.org/licenses/MIT The MIT License (MIT)
+ */
+-->
+
+<config>
+    <modules>
+        <Team23_SeoPagination>
+            <version>1.0.0</version>
+        </Team23_SeoPagination>
+    </modules>
+
+    <global>
+        <models>
+            <seopagination>
+                <class>Team23_SeoPagination_Model</class>
+            </seopagination>
+        </models>
+
+        <helpers>
+            <seopagination>
+                <class>Team23_SeoPagination_Helper</class>
+            </seopagination>
+        </helpers>
+    </global>
+
+    <frontend>
+        <events>
+            <controller_action_layout_render_before_catalog_category_view>
+                <observers>
+                    <seopagination>
+                        <type>singleton</type>
+                        <class>seopagination/observer</class>
+                        <method>injectPagination</method>
+                    </seopagination>
+                </observers>
+            </controller_action_layout_render_before_catalog_category_view>
+        </events>
+    </frontend>
+
+    <adminhtml>
+        <translate>
+            <modules>
+                <Team23_SeoPagination>
+                    <files>
+                        <default>Team23_SeoPagination.csv</default>
+                    </files>
+                </Team23_SeoPagination>
+            </modules>
+        </translate>
+    </adminhtml>
+
+    <default>
+        <catalog>
+            <seo>
+                <relprevnext>0</relprevnext>
+                <canonical>0</canonical>
+                <robots>INDEX,FOLLOW</robots>
+            </seo>
+        </catalog>
+    </default>
+</config>

@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+
+<!--
+/**
+ * Team23 SeoPagination
+ *
+ * @category  Team23
+ * @package   Team23_SeoPagination
+ * @version   1.0.0
+ * @copyright 2016 Team23 GmbH & Co. KG (http://www.team23.de)
+ * @license   http://opensource.org/licenses/MIT The MIT License (MIT)
+ */
+-->
+
+<config>
+    <sections>
+        <catalog>
+            <groups>
+                <seo>
+                    <fields>
+                        <relprevnext translate="label comment" module="seopagination">
+                            <label>Use rel="next" and rel="prev"</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>9</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>Only applies if "Allow All Products per Page" is disabled.</comment>
+                        </relprevnext>
+                        <canonical translate="label comment" module="seopagination">
+                            <label>Add canonical tag</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>Adds canonical tag depending on "Allow All Products per Page" setting.</comment>
+                        </canonical>
+                        <robots translate="label comment" module="seopagination">
+                            <label>Robots setting</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_design_robots</source_model>
+                            <sort_order>11</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>Applies to paginated pages.</comment>
+                        </robots>
+                    </fields>
+                </seo>
+            </groups>
+        </catalog>
+    </sections>
+</config>

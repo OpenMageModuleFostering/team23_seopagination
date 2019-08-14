@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<package>
+    <name>Team23_SeoPagination</name>
+    <version>1.0.0</version>
+    <stability>stable</stability>
+    <license uri="http://opensource.org/licenses/MIT">The MIT License (MIT)</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>SEO optimized pagination.</summary>
+    <description>Adds optimized Canonical Tag and next/prev link relations to HTML head section. And also adds a better robots meta tag on paginated pages.</description>
+    <notes>First stable release.&#xD;
+&#xD;
+- Adds rel="prev" / rel="next" to HTML head section&#xD;
+- Possibility to provide better robots meta tag&#xD;
+- Optimized canonical tag&#xD;
+</notes>
+    <authors><author><name>Marc Rochow</name><user>team23</user><email>magento@team23.de</email></author></authors>
+    <date>2016-09-16</date>
+    <time>12:03:24</time>
+    <contents><target name="magecommunity"><dir name="Team23"><dir name="SeoPagination"><dir name="Helper"><file name="Data.php" hash="db529303d45b43fe74a232b5ef650b78"/></dir><dir name="Model"><file name="Observer.php" hash="2b7855312707c56f79fa50df62dfd011"/><file name="Paginator.php" hash="e18565d5675c9528f3e54a4e652ae8f8"/></dir><dir name="etc"><file name="config.xml" hash="e29032f96eaf3c8bc3b8333c6de4f7ba"/><file name="system.xml" hash="d3ac0ff56caf6af39cb731f77c695bbd"/></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Team23_SeoPagination.xml" hash="546bfb2475b57b715d325db5b876c1c5"/></dir></target><target name="magelocale"><dir name="en_US"><file name="Team23_SeoPagination.csv" hash="fe8651b0b778a9685d46be5a2bea2353"/></dir><dir name="de_DE"><file name="Team23_SeoPagination.csv" hash="3d3084c22fe79ddc54018a3d79fa24f0"/></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.3.0</min><max>8.0.0</max></php></required></dependencies>
+</package>
